@@ -1,0 +1,8 @@
+Following tutorial at 
+http://www.raywenderlich.com/62699/reactivecocoa-tutorial-pt1
+
+
+If you download the project from the site: 
+Bug fix
+Select RWReactivePlaygroundTest target and remove the info.plist file path
+
