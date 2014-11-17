@@ -8,6 +8,8 @@
 
 #import "RWViewController.h"
 #import "RWDummySignInService.h"
+#import "AMCocoaManager.h"
+
 
 @interface RWViewController ()
 
@@ -27,16 +29,20 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [self updateUIState];
+  //[self updateUIState];
   
   self.signInService = [RWDummySignInService new];
   
   // handle text changes for both text fields
-  [self.usernameTextField addTarget:self action:@selector(usernameTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
-  [self.passwordTextField addTarget:self action:@selector(passwordTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
+  //[self.usernameTextField addTarget:self action:@selector(usernameTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
+  //[self.passwordTextField addTarget:self action:@selector(passwordTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
   
   // initially hide the failure message
   self.signInFailureText.hidden = YES;
+
+  [AMCocoaManager observeTextFieldWithValidation:self.usernameTextField];
+  [AMCocoaManager observeTextFieldWithValidation:self.passwordTextField];
+
 }
 
 - (BOOL)isValidUsername:(NSString *)username {

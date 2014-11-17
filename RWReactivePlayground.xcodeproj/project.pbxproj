@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AED07D31A1A59B5003DB9F0 /* AMCocoaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED07D21A1A59B5003DB9F0 /* AMCocoaManager.m */; };
+		1AED07D81A1A636B003DB9F0 /* AMValidatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED07D71A1A636B003DB9F0 /* AMValidatorManager.m */; };
 		721E122718698DC100B30134 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 721E122618698DC100B30134 /* kitten.jpg */; };
 		72A2881E18618A2E00DDD30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881D18618A2E00DDD30A /* Foundation.framework */; };
 		72A2882018618A2E00DDD30A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881F18618A2E00DDD30A /* CoreGraphics.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AED07D11A1A59B5003DB9F0 /* AMCocoaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCocoaManager.h; path = Manager/AMCocoaManager.h; sourceTree = "<group>"; };
+		1AED07D21A1A59B5003DB9F0 /* AMCocoaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMCocoaManager.m; path = Manager/AMCocoaManager.m; sourceTree = "<group>"; };
+		1AED07D61A1A636B003DB9F0 /* AMValidatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMValidatorManager.h; path = Validator/AMValidatorManager.h; sourceTree = "<group>"; };
+		1AED07D71A1A636B003DB9F0 /* AMValidatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMValidatorManager.m; path = Validator/AMValidatorManager.m; sourceTree = "<group>"; };
 		71B44E0162C82EBE867D8134 /* libPods-RWReactivePlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWReactivePlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721E122618698DC100B30134 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 		72A2881A18618A2E00DDD30A /* RWReactivePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWReactivePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +51,7 @@
 		72A2882718618A2E00DDD30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72A2882918618A2E00DDD30A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A2882B18618A2E00DDD30A /* RWReactivePlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWReactivePlayground-Prefix.pch"; sourceTree = "<group>"; };
-		72A2882C18618A2E00DDD30A /* RWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWAppDelegate.h; sourceTree = "<group>"; };
+		72A2882C18618A2E00DDD30A /* AMCocoaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMCocoaManager.h; path = Manager/AMCocoaManager.h; sourceTree = "<group>"; };
 		72A2882D18618A2E00DDD30A /* RWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWAppDelegate.m; sourceTree = "<group>"; };
 		72A2883018618A2E00DDD30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A2883218618A2E00DDD30A /* RWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWViewController.h; sourceTree = "<group>"; };
@@ -84,6 +90,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AED07CA1A1A57AC003DB9F0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				72A2882D18618A2E00DDD30A /* RWAppDelegate.m */,
+				72A2882C18618A2E00DDD30A /* AMCocoaManager.h */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		1AED07CF1A1A5984003DB9F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72A2883218618A2E00DDD30A /* RWViewController.h */,
+				72A2883318618A2E00DDD30A /* RWViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		1AED07D01A1A5999003DB9F0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1AED07D11A1A59B5003DB9F0 /* AMCocoaManager.h */,
+				1AED07D21A1A59B5003DB9F0 /* AMCocoaManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		1AED07D41A1A6349003DB9F0 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				1AED07D61A1A636B003DB9F0 /* AMValidatorManager.h */,
+				1AED07D71A1A636B003DB9F0 /* AMValidatorManager.m */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
 		72A2881118618A2E00DDD30A = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +160,12 @@
 		72A2882318618A2E00DDD30A /* RWReactivePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				1AED07D41A1A6349003DB9F0 /* Validator */,
+				1AED07D01A1A5999003DB9F0 /* Manager */,
+				1AED07CF1A1A5984003DB9F0 /* ViewController */,
+				1AED07CA1A1A57AC003DB9F0 /* Delegate */,
 				721E122618698DC100B30134 /* kitten.jpg */,
-				72A2882C18618A2E00DDD30A /* RWAppDelegate.h */,
-				72A2882D18618A2E00DDD30A /* RWAppDelegate.m */,
 				72A2882F18618A2E00DDD30A /* Main.storyboard */,
-				72A2883218618A2E00DDD30A /* RWViewController.h */,
-				72A2883318618A2E00DDD30A /* RWViewController.m */,
 				72A2883518618A2E00DDD30A /* Images.xcassets */,
 				72A2882418618A2E00DDD30A /* Supporting Files */,
 				72A2885218620EA100DDD30A /* RWDummySignInService.h */,
@@ -287,6 +329,8 @@
 			files = (
 				72A2882A18618A2E00DDD30A /* main.m in Sources */,
 				72A2883418618A2E00DDD30A /* RWViewController.m in Sources */,
+				1AED07D81A1A636B003DB9F0 /* AMValidatorManager.m in Sources */,
+				1AED07D31A1A59B5003DB9F0 /* AMCocoaManager.m in Sources */,
 				72A2882E18618A2E00DDD30A /* RWAppDelegate.m in Sources */,
 				72A2885418620EA100DDD30A /* RWDummySignInService.m in Sources */,
 			);
