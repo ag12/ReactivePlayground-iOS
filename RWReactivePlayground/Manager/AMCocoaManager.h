@@ -17,4 +17,9 @@
 + (void)observeTextFieldWithFilterSeparate:(UITextField *)field;
 + (void)observeTextFieldWithMap:(UITextField *)field;
 + (void)observeTextFieldWithValidation:(UITextField *)field;
++ (void)observeTextFieldWithMarco:(UITextField *)field;
++ (RACSignal *)observeTextFieldWithSignal:(UITextField *)field;
++ (void)observeSignalsForButton:(UIButton *)goButton firstSignal:(RACSignal *)firstSignal lastSignal:(RACSignal *)lastSignal;
++ (void)observeEventTouchUpInsideOnElemnt:(UIButton *)button uname:(UITextField *)uname password:(UITextField *)password message:(UILabel *)message compelete:(void(^)(BOOL))compelete;
+
 @end
